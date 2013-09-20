@@ -1,0 +1,11 @@
+name = NTL Keywords
+description = NTL Keywords Taxonomy Structure
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = ntl_keywords
+dependencies[] = features
+dependencies[] = taxonomy
+dependencies[] = term_reference_tree
+features[features_api][] = api:1
+features[taxonomy][] = ntl_keywords
