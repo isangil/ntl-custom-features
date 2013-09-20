@@ -10,144 +10,6 @@
 function deims_person_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-biblio-body'.
-  $fields['node-biblio-body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'biblio',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'body',
-      'label' => 'Body',
-      'required' => FALSE,
-      'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'module' => 'text',
-        'settings' => array(
-          'rows' => 20,
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => 1,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-data_source-field_deims_data_explorer'.
-  $fields['node-data_source-field_deims_data_explorer'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_deims_data_explorer',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'connection' => array(
-          0 => 'connection',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'schema_reference',
-      'settings' => array(
-        'allowed_connections' => array(),
-        'select_column' => 0,
-        'select_table' => 1,
-      ),
-      'translatable' => '0',
-      'type' => 'schema_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'data_source',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 15,
-        ),
-        'eml' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'full' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_deims_data_explorer',
-      'label' => 'Remote Data Source',
-      'required' => FALSE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'module' => 'schema_reference',
-        'settings' => array(),
-        'type' => 'schema_reference_default',
-        'weight' => 15,
-      ),
-    ),
-  );
-
   // Exported field: 'node-person-field_address'.
   $fields['node-person-field_address'] = array(
     'field_config' => array(
@@ -1831,7 +1693,6 @@ Prof.',
   // Included for use with string extractors like potx.
   t('Address');
   t('Associated Biblio Author');
-  t('Body');
   t('College');
   t('Department');
   t('Email');
@@ -1843,7 +1704,6 @@ Prof.',
   t('Organization');
   t('Person ID');
   t('Phone');
-  t('Remote Data Source');
   t('Role');
   t('Specialty Area');
   t('Title');
