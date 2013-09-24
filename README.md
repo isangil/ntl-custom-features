@@ -3,6 +3,9 @@ ntl-custom-features
 
 These features will override current DEIMS settings -- mimic customization for NTL in DEIMS D6
 
+You can download them in many ways, here is one:
+$ git clone git@github.com:isangil/ntl-custom-features destination-dir
+
 The modules that begin with "ntl_" are a set of custom modules. We need install in your NTL 
 site, enable them.
 
@@ -19,7 +22,10 @@ Specifically, we enhance the DEIMS Person module.  This is a feature that will o
 existing feature -- you may try overwriting the "profiles/deims/modules/features/deims_person" 
 module. Visit the "features" dashboard to activate it, or just run cron once you drop it there.
 
-The other three can be enabled by visiting the "modules" page
+If you are install DEIMS from scratch, a better way may be to replace the "deims_person" module
+in the profile (at [download-dir-path]/modules/features) with the one provided here.
+
+The other three features can be enabled by visiting the "modules" page
 
 
 
